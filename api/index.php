@@ -1,10 +1,10 @@
 
 <?php
 
-if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
-    http_response_code(403);
-    exit('Access Forbidden - HTTPS is required.');
-}
+// if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
+//     http_response_code(403);
+//     exit('Access Forbidden - HTTPS is required.');
+// }
 
 $server_domain = "https://shompan.systemgenie.com";
 
