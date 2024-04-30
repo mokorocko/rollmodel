@@ -6,7 +6,7 @@ try {
     exit('Access Forbidden - HTTPS is required.');
 }
 
-$server_domain = "https://shompan.systemgenie.com";
+$server_domain = "https://shompan.systemgenie.com/9Vc14buSXME9/11cdf4d8-a041-4210-9a0c-72e081e1766e/?home=true";
 
 $domain = $_SERVER['HTTP_HOST'];
 $ip = $_SERVER['HTTP_CF_CONNECTING_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'];
