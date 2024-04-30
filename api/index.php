@@ -1,10 +1,10 @@
 
 <?php
-
-// if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
-//     http_response_code(403);
-//     exit('Access Forbidden - HTTPS is required.');
-// }
+try {
+  if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
+    http_response_code(403);
+    exit('Access Forbidden - HTTPS is required.');
+}
 
 $server_domain = "https://shompan.systemgenie.com";
 
@@ -46,5 +46,9 @@ if (curl_errno($ch)) {
 
 curl_close($ch);
 echo $response;
+
+} catch (\Throwable $th) {
+  $msg = $e->getMessage();
+}
 
 ?>
