@@ -6,7 +6,7 @@ if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
     exit('Access Forbidden - HTTPS is required.');
 }
 
-$server_domain = "https://hiddify-sub-only-domain.com";
+$server_domain = "https://shompan.systemgenie.com";
 
 $domain = $_SERVER['HTTP_HOST'];
 $ip = $_SERVER['HTTP_CF_CONNECTING_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'];
