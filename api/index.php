@@ -48,7 +48,7 @@ curl_close($ch);
 echo $response;
 
 } catch (\Throwable $th) {
-  $msg = $e->getMessage();
+  echo 'Fatal error caught: '.$err->getMessage();
 }
 
 ?>
